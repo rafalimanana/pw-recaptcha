@@ -9,6 +9,7 @@
             "email": "rafalimananafabrice@gmail.com"
         }
     ],
+    "version": "1.0.*",
     "require": {
         "php": ">=8.1"
     },
