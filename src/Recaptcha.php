@@ -33,12 +33,14 @@ class Recaptcha
         $this->recaptcha_key = $recaptcha_key;
         $this->recaptcha_score_threshold = $recaptcha_score_threshold;
     }
+
     /**
      * @param $recaptcha_token
      * @return boolean
      */
     public function isValidReCaptcha(
-    	$recaptcha_token
+    	$recaptcha_token,
+        &$recaptcha=null
     ){
         if(
         	!$this->secret || 
